@@ -1,0 +1,23 @@
+Backdoor_Malware: Software designed to provide unauthorized access to a system.
+BenignTraffic: Legitimate network traffic that doesn't pose a threat to the system.
+BrowserHijacking: Unauthorized modification of a web browser's settings or behavior.
+CommandInjection: Exploiting vulnerabilities to execute arbitrary commands on a system.
+DDoS-ACK_Fragmentation: Distributed Denial of Service attack utilizing ACK packet fragmentation.
+DDoS-HTTP_Flood: Flood attack targeting HTTP servers to overwhelm them with requests.
+DDoS-ICMP_Flood: Flood attack targeting ICMP protocol to overwhelm network bandwidth.
+DDoS-ICMP_Fragmentation: Distributed Denial of Service attack utilizing ICMP packet fragmentation.
+DDoS-PSHACK_Flood: Flood attack targeting the PSHACK protocol to exhaust server resources.
+DDoS-RSTFINFlood: Flood attack exploiting TCP flags RST and FIN to disrupt connections.
+DDoS-SYN_Flood: Flood attack targeting TCP connections by sending a large number of SYN packets.
+DDoS-SlowLoris: Type of DDoS attack that aims to keep HTTP connections open by sending partial requests.
+DDoS-SynonymousIP_Flood: DDoS attack where the source IP addresses are constantly changing.
+DDoS-TCP_Flood: Flood attack targeting TCP connections to exhaust server resources.
+DDoS-UDP_Flood: Flood attack targeting UDP connections to overwhelm network bandwidth.
+DDoS-UDP_Fragmentation: Distributed Denial of Service attack utilizing UDP packet fragmentation.
+DNS_Spoofing: Manipulating DNS records to redirect traffic to malicious servers.
+DictionaryBruteForce: Attempting to gain unauthorized access by systematically trying passwords from a predefined list.
+DoS-HTTP_Flood: Denial of Service attack targeting HTTP servers with a flood of requests.
+DoS-SYN_Flood: Denial of Service attack targeting TCP connections with a flood of SYN packets.
+DoS-TCP_Flood: Denial of Service attack targeting TCP connections to exhaust server resources.
+DoS-UDP_Flood: Denial of Service attack targeting UDP connections to overwhelm network bandwidth.
+MITM-ArpSpoofing: Man-in-the-Middle attack where the attacker intercepts communication by spoofing ARP messages.

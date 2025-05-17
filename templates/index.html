@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            background-image: url('static/images/in.jpg'); /* Replace 'background.jpg' with your image file */
+            background-size: center;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            width: 400px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+            display: block;
+            text-align: left;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Data for Prediction</h2>
+        <form method="post" action="/predict">
+            <label for="flow_duration">Flow Duration:</label><br>
+            <input type="text" id="flow_duration" name="flow_duration" required><br>
+            <label for="Header_Length">Header Length:</label><br>
+            <input type="text" id="Header_Length" name="Header_Length" required><br>
+            <label for="Protocol_Type">Protocol Type:</label><br>
+            <input type="text" id="Protocol_Type" name="Protocol_Type" required><br>
+            <label for="Duration">Duration:</label><br>
+            <input type="text" id="Duration" name="Duration" required><br>
+            <label for="Rate">Rate:</label><br>
+            <input type="text" id="Rate" name="Rate" required><br>
+            <label for="Srate">Srate:</label><br>
+            <input type="text" id="Srate" name="Srate" required><br>
+            <label for="fin_flag_number">FIN Flag Number:</label><br>
+            <input type="text" id="fin_flag_number" name="fin_flag_number" required><br>
+            <label for="Std">Std:</label><br>
+            <input type="text" id="Std" name="Std" required><br>
+            <label for="Tot_size">Total Size:</label><br>
+            <input type="text" id="Tot_size" name="Tot_size" required><br>
+            <label for="IAT">IAT:</label><br>
+            <input type="text" id="IAT" name="IAT" required><br>
+            <label for="Magnitue">Magnitude:</label><br>
+            <input type="text" id="Magnitue" name="Magnitue" required><br>
+            <label for="Radius">Radius:</label><br>
+            <input type="text" id="Radius" name="Radius" required><br>
+            <label for="Weight">Weight:</label><br>
+            <input type="text" id="Weight" name="Weight" required><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
